@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
+include '../config/config.php';
 session_start();
 if (!isset($_SESSION['name'])) {
     header('Location: userlogin.php');
 }
+
+// if(isset($))
 ?>
 
 <head>
@@ -91,7 +94,15 @@ if (!isset($_SESSION['name'])) {
         <div class="row justify-content-around d-flex">
             <?php 
             $sql = "";
-            
+            $result = mysqli_query($conn, $sql);
+            if($result-> num_rows > 0){
+                while($row = $result-> fetch_assoc()){
+                    ?>
+            <div class="col-sm-2 col-md-2 col-lg-2 shadow text-dark mx-3 my-3 px-3 py-3 text-center text-wrap w-25 ">
+                <h6><?php echo $row[0]; ?></h6>
+                <p class="text-center font-weight-light"><?php echo $row[1]; ?></p>
+                <form class="m-0 p-0" method="POST"><button class="btn btn-outline-success" type="submit" name="submit">More</button></form>
+            </div><?php }} ?>
         </div>
     </div>
     <div class="d-flex font-weight-bold text-start align-items-center">
