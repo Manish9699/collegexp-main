@@ -83,9 +83,11 @@ if (!isset($_SESSION['name'])) {
                     <div class=" col-sm-6 col-md-6 col-lg-6 mx-0 my-0 py-1 px-1 text-dark text-center text-wrap">
                     <h2 class="font-weight-bold mt-3 mb-3 px-3"><?php echo $row['project_name'] ?></h2>
                     <p class="font-weight-light text-center my-3 px-3"><?php echo $row['project_desc'] ?></p>
-                    <div class="container-fluid d-flex justify-content-center my-3 px-3 py-3">
+                    <?php if($row['author_id'] != $_SESSION['user_id']){
+                        echo '<div class="container-fluid d-flex justify-content-center my-3 px-3 py-3">
                         <button class="btn btn-lg btn-outline-black font-weight-light">Apply Now</button>
-                    </div>
+                    </div>';
+                    } ?>
                     <div class="container-fluid d-flex justify-content-between px-0 my-3">
                         <!-- <cite class="font-weight-light text-muted text-start px-3" style="font-size: 12px;">Posted on 17
                             Jan 2022</cite> -->

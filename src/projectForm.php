@@ -8,14 +8,15 @@ if (!isset($_SESSION['name'])) {
     header('Location: userlogin.php');
 }
 if (isset($_POST['submit'])) {
+    $author_id = $_SESSION['user_id'];
 	$project_creator = $_SESSION['name'][0];
     $project_name = $_POST['project_name'];
     $project_desc = $_POST['project_desc'];
     $project_img = $_POST['project_img'];
 
 		// $sql = "SELECT * FROM user_base WHERE email='$email';";
-    $sql = "INSERT INTO `project_base` (`project_name`,`project_desc`, `project_img`, `project_creator`)
-            VALUES ('$project_name','$project_desc', '$project_img', '$project_creator')";
+    $sql = "INSERT INTO `project_base` (`project_name`,`project_desc`, `project_img`, `project_creator`, `author_id`)
+            VALUES ('$project_name','$project_desc', '$project_img', '$project_creator', '$author_id')";
     $result = mysqli_query($conn, $sql);
     if ($result) {
         echo "<script>alert('Wow! Project Posted.')</script>";
