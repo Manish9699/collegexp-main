@@ -5,7 +5,6 @@ session_start();
 if (!isset($_SESSION['name'])) {
     header('Location: userlogin.php');
 }
-
 ?>
 
 <head>
@@ -90,55 +89,9 @@ if (!isset($_SESSION['name'])) {
     </div>
     <div class="container-fluid">
         <div class="row justify-content-around d-flex">
-            <div class="col-sm-2 col-md-2 col-lg-2 shadow text-dark mx-3 my-3 px-3 py-3 text-center text-wrap w-25 ">
-                <h6>New NFT Future Contracts</h6>
-                <p class="text-center font-weight-light">Developing New ERC1155 Contracts for better clarity on the
-                    Users.</p>
-                <div class="progress" style="height: 10px">
-                    <div class="progress-bar progressanim"></div>
-                </div>
-            </div>
-            <div class="col-sm-2 col-md-2 col-lg-2 shadow text-dark mx-3 my-3 px-3 py-3 text-center text-wrap w-25 ">
-                <h6>New NFT Future Contracts</h6>
-                <p class="text-center font-weight-light">Developing New ERC1155 Contracts for better clarity on the
-                    Users.</p>
-                <div class="progress" style="height: 10px">
-                    <div class="progress-bar progressanim"></div>
-                </div>
-            </div>
-            <div class="col-sm-2 col-md-2 col-lg-2 shadow text-dark mx-3 my-3 px-3 py-3 text-center text-wrap w-25">
-                <h6>New NFT Future Contracts</h6>
-                <p class="text-center font-weight-light">Developing New ERC1155 Contracts for better clarity on the
-                    Users.</p>
-                <div class="progress" style="height: 10px">
-                    <div class="progress-bar progressanim"></div>
-                </div>
-            </div>
-            <div class="col-sm-2 col-md-2 col-lg-2 shadow text-dark mx-3 my-3 px-3 py-3 text-center text-wrap w-25">
-                <h6>New NFT Future Contracts</h6>
-                <p class="text-center font-weight-light projectCards">Developing New ERC1155 Contracts for better
-                    clarity on the
-                    Users.</p>
-                <div class="progress" style="height: 10px">
-                    <div class="progress-bar progressanim"></div>
-                </div>
-            </div>
-            <div class="col-sm-2 col-md-2 col-lg-2 shadow text-dark mx-3 my-3 px-3 py-3 text-center text-wrap w-25 ">
-                <h6>New NFT Future Contracts</h6>
-                <p class="text-center font-weight-light">Developing New ERC1155 Contracts for better clarity on the
-                    Users.</p>
-                <div class="progress" style="height: 10px">
-                    <div class="progress-bar progressanim"></div>
-                </div>
-            </div>
-            <div class="col-sm-2 col-md-2 col-lg-2 shadow text-dark mx-3 my-3 px-3 py-3 text-center text-wrap w-25 ">
-                <h6>New NFT Future Contracts</h6>
-                <p class="text-center font-weight-light">Developing New ERC1155 Contracts for better clarity on the
-                    Users.</p>
-                <div class="progress" style="height: 10px">
-                    <div class="progress-bar progressanim"></div>
-                </div>
-            </div>
+            <?php 
+            $sql = "";
+            
         </div>
     </div>
     <div class="d-flex font-weight-bold text-start align-items-center">

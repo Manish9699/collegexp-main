@@ -57,7 +57,7 @@
     </div>
   </nav>
   <div class="py-0 px-0 my-3 mx-3 row d-flex justify-content-around">
-    <div class="col-8 mx-0 px-0 py-1 row d-sm-block">
+    <div class="col-8 mx-0 px-0 py-1 row">
       <div class="col-12 row d-flex bg-light justify-content-between mb-2 rounded shadow float-start align-items-middle">
         <div class="text-dark px-2 py-3 col-8">
           <span class="fsize-m font-encode-500">NFT FUTURES CONTRACTS</span>
@@ -66,17 +66,26 @@
           <i class="fa-regular fa-pen-to-square fa-lg"></i><span> Edit</span>
         </div>
       </div>
-      <div class="col-12 row mt-2 bg-light px-0 py-1 rounded shadow float-start">
+      <div class="col-12 row mt-2 bg-light px-0 py-1 rounded shadow">
         <div class="col-7 px-3 py-2 text-info">
           <span class="fsize-sm font-encode-300">Ushnish Dey Bhowmik</span>
         </div>
       </div>
-      <div class="col-12 row mt-2 px-0 py-1 d-flex justify-content-between float-start">
+      <div class="col-12 row mt-2 px-0 py-1 d-flex justify-content-between">
         <div class="col-4 px-3 py-2 text-info bg-light rounded shadow">
           <span class="fsize-sm font-encode-300">Ushnish Dey Bhowmik</span>
         </div>
-        <div class="col-7 px-3 py-2 text-info bg-light rounded shadow">
-          <span class="fsize-sm font-encode-300">Ushnish Dey Bhowmik</span>
+        <div class="col-7 row px-3 py-2 text-info bg-light rounded shadow">
+          <span class="fsize-sm font-encode-300">Objectives</span><br>
+            <div class="col-12 py-2 fsize-sm text-success align-items-middle">
+            <i class="fa-solid fa-check"></i><span class="ps-2"> Objective 1. Hello There!</span>
+          </div>
+          <div class="col-12 py-2 fsize-sm text-warning align-items-middle">
+          <i class="fa-regular fa-square"></i><span class="ps-2"> Objective 2. Gotta Complete This</span>
+          </div>
+          <div class="col-12 py-2 fsize-sm align-items-middle">
+          <button class="btn btn-block btn-sm btn-success"><i class="fa-solid fa-plus"></i></button>
+          </div>
         </div>
       </div>
     </div>
